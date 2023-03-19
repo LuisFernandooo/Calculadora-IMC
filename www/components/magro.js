@@ -9,26 +9,26 @@ function CalcImc(){
 
     imc = (massa / (altura * altura)).toFixed(2)
 
-    document.getElementById('resultado').innerHTML = "Olá " + nome + " seu imc é: " + imc
+    document.getElementById('resultado').innerHTML = "Olá " + nome + " seu IMC é: " + imc
 
     if(resultado < 18,5)
     {
         document.getElementById('resultado2').innerHTML = " Classificado como: Magreza"
     }
 
-    else if(resultado < 24,9){
+    else if(resultado > 24,9){
         document.getElementById('resultado2').innerHTML = " Classificado como: Saudável"
     }
 
-    else if(resultado < 29,9){
+    else if(resultado > 29,9){
         document.getElementById('resultado2').innerHTML = " Classificado como: Sobrepeso"
     }
 
-    else if(resultado < 34,9){
+    else if(resultado > 34,9){
         document.getElementById('resultado2').innerHTML = " Classificado como: Obesidade Grau I"
     }
 
-    else if(resultado < 39,9){
+    else if(resultado > 39,9){
         document.getElementById('resultado2').innerHTML = " Classificado como: Obesidade Grau II (severa)"
     }
 
