@@ -9,30 +9,30 @@ function CalcImc(){
 
     imc = (massa / (altura * altura)).toFixed(2)
 
-    document.getElementById('resultado').innerHTML = "Olá " + nome + " seu IMC é: " + imc
+    document.getElementById('texto1').innerHTML = "Olá " + nome + " seu IMC é: " + imc
 
-    if(resultado < 18,5)
+    if(imc < 18.5)
     {
-        document.getElementById('resultado2').innerHTML = " Classificado como: Magreza"
+        document.getElementById('texto2').innerHTML = " Classificado como: Magreza"
     }
 
-    else if(resultado > 24,9){
-        document.getElementById('resultado2').innerHTML = " Classificado como: Saudável"
+    else if(imc < 24.9){
+        document.getElementById('texto2').innerHTML = " Classificado como: Saudável"
     }
 
-    else if(resultado > 29,9){
-        document.getElementById('resultado2').innerHTML = " Classificado como: Sobrepeso"
+    else if(imc < 29.9){
+        document.getElementById('texto2').innerHTML = " Classificado como: Sobrepeso"
     }
 
-    else if(resultado > 34,9){
-        document.getElementById('resultado2').innerHTML = " Classificado como: Obesidade Grau I"
+    else if(imc < 34.9){
+        document.getElementById('texto2').innerHTML = " Classificado como: Obesidade Grau I"
     }
 
-    else if(resultado > 39,9){
-        document.getElementById('resultado2').innerHTML = " Classificado como: Obesidade Grau II (severa)"
+    else if(imc < 39.9){
+        document.getElementById('texto2').innerHTML = " Classificado como: Obesidade Grau II (severa)"
     }
 
     else{
-        document.getElementById('resultado2').innerHTML = " Classificado como: Obesidade Grau III (morbida)"
+        document.getElementById('texto2').innerHTML = " Classificado como: Obesidade Grau III (morbida)"
     }
 }
